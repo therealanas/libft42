@@ -6,7 +6,7 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 23:34:18 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:52:12 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/10/30 19:44:46 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 				i = fi + 1;
 			else
 				i++;
-			continue ;
-			j = 0 :
+			j = 0 ;
+			continue;
 		}
 		i++;
 	}

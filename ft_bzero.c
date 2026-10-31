@@ -6,7 +6,7 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:37:34 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:49:47 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/10/30 18:32:53 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*p;
-	size_t			i;
 
 	p = s;
 	while (n-- > 0)

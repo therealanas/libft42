@@ -6,7 +6,7 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 20:15:00 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:36:25 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/10/30 19:39:09 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i = 0;
 	size_t	prei = 0;
 	size_t	sufi = 0;
-	char	*r;
+	char	*r = NULL;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);

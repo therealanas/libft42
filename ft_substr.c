@@ -6,7 +6,7 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 15:08:34 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:36:22 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/10/31 13:32:37 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,27 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i = 0;
 	char	*r;
 	size_t	l;
+	size_t size;
 
 	if (s == NULL)
 		return (NULL);
 	l = ft_strlen((char *) s);
-	r = malloc(len + 1);
+	if (start >= l)
+	{
+		r = malloc (1);
+		if(r == NULL)
+			return (NULL);
+		*r = '\0';
+		return (r);
+	}
+	if (len < (l - start))
+		size = len;
+	else 
+		size = l - start;
+	r = malloc(size + 1);
 	if (r == NULL)
 		return (NULL);
-	while ((i + start) < l && i < len)
+	while ((i + start) < l && i < size)
 	{
 		r[i] = s[i + start];
 		i++;
