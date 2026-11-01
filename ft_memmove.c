@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/15 09:44:14 by username          #+#    #+#             */
-/*   Updated: 2026/11/01 14:08:40 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/10/15 09:44:14 by ahoumdi           #+#    #+#             */
+/*   Updated: 2026/11/01 18:32:11 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

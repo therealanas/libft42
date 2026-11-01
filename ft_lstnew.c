@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/26 17:44:45 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:37:10 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/10/26 17:44:45 by ahoumdi           #+#    #+#             */
+/*   Updated: 2026/11/01 18:29:03 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content)
 {

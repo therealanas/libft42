@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/24 16:41:59 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:36:58 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/10/24 16:41:59 by ahoumdi           #+#    #+#             */
+/*   Updated: 2026/11/01 18:38:27 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

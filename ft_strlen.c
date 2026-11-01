@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/13 13:14:21 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:36:39 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/10/13 13:14:21 by ahoumdi           #+#    #+#             */
+/*   Updated: 2026/11/01 18:45:34 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

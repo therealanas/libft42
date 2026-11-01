@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/23 15:55:38 by username          #+#    #+#             */
-/*   Updated: 2026/10/31 23:33:30 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/10/23 15:55:38 by ahoumdi           #+#    #+#             */
+/*   Updated: 2026/11/01 18:41:28 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

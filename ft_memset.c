@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/13 22:04:26 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:51:11 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/10/13 22:04:26 by ahoumdi           #+#    #+#             */
+/*   Updated: 2026/11/01 18:34:13 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *p, int c, size_t n)
 {

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/26 16:56:38 by username          #+#    #+#             */
-/*   Updated: 2026/11/01 13:35:49 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/10/26 16:56:38 by ahoumdi           #+#    #+#             */
+/*   Updated: 2026/11/01 18:46:25 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*str;
 
 	i = 0;
-	if (s == NULL)
+	if (s == NULL || f == NULL)
 		return (NULL);
 	l = ft_strlen(s);
 	str = malloc(l + 1);

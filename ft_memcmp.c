@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/17 19:24:31 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:51:04 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/10/17 19:24:31 by ahoumdi           #+#    #+#             */
+/*   Updated: 2026/11/01 18:30:49 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
