@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 14:53:44 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:51:58 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/11/01 13:52:18 by username          #+#    #+#             */
+/*   Updated: 2026/11/01 13:52:22 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -23,10 +23,10 @@ char	*ft_strchr(const char *s, int c)
 	l = 0;
 	while (*(ps++))
 		l++;
-	while (i <= l && &s[i] != NULL)
+	while (i <= l)
 	{
 		if ((unsigned char) s[i] == (unsigned char) c)
-			return (char *)(&s[i]);
+			return ((char *)(&s[i]));
 		i++;
 	}
 	return (NULL);

@@ -5,17 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/25 15:16:19 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:50:38 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/11/01 13:48:45 by username          #+#    #+#             */
+/*   Updated: 2026/11/01 14:41:15 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-long	ft_countd(long n)
+static long	ft_countd(long n)
 {
-	long	r = 1;
+	long	r;
 
+	r = 1;
 	while (n >= 10)
 	{
 		n /= 10;
@@ -26,16 +27,15 @@ long	ft_countd(long n)
 
 char	*ft_itoa(int n)
 {
-	long	s = 0;
-	long	num = (long) n;
+	long	s;
+	long	num;
 	long	l;
 	char	*str;
 
-	if (num < 0)
-	{
-		s = 1;
+	s = (n < 0);
+	num = (long) n;
+	if (s)
 		num *= -1;
-	}
 	l = ft_countd(num);
 	str = malloc(l + s + 1);
 	if (str == NULL)

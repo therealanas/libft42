@@ -6,7 +6,7 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 09:44:14 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:51:09 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/01 14:08:40 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (ps < pd)
 	{
 		while (!(n-- <= 0))
-			*(pd + n) = (unsigned char) * (ps + n);
+			*(pd + n) = (unsigned char) *(ps + n);
 	}
 	else
 	{
 		while (!(n-- <= 0))
-			*(pd++) = (unsigned char) * (ps++);
+			*(pd++) = (unsigned char) *(ps++);
 	}
 	return (dest);
 }

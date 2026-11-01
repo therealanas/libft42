@@ -6,32 +6,19 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 16:56:38 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:52:08 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/01 13:35:49 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
-
-static size_t	ft_strlen(const char *s)
-{
-	unsigned int	l;
-
-	l = 0;
-	while (*s)
-	{
-		l++;
-		s++;
-	}
-	return (l);
-}
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	i = 0;
-	unsigned int	l;
-	char			*str;
+	size_t	i;
+	size_t	l;
+	char	*str;
 
+	i = 0;
 	if (s == NULL)
 		return (NULL);
 	l = ft_strlen(s);

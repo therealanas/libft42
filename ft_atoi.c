@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/22 14:35:42 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:49:44 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/11/01 13:45:46 by username          #+#    #+#             */
+/*   Updated: 2026/11/01 15:44:05 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <limits.h>
+#include "libft.h"
 
 static int	checkmax(char s, int sum)
 {
@@ -26,18 +26,17 @@ int	ft_atoi(const char *ptr)
 {
 	int	sum;
 	int	s;
+	int	i;
 
 	sum = 0;
 	s = 1;
-	int	i = 0;
-
+	i = 0;
 	while (ptr[i] == 32 || (ptr[i] >= 9 && ptr[i] <= 13))
 		i++;
 	if (ptr[i] == '-' || ptr[i] == '+')
 	{
-		if (ptr[i] == '-')
+		if (ptr[i++] == '-')
 			s *= -1;
-		i++;
 	}
 	while (ptr[i] >= '0' && ptr[i] <= '9')
 	{

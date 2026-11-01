@@ -1,4 +1,4 @@
-CC = cc 
+CC = cc
 CFLAGS = -Werror -Wextra -Wall
 NAME = libft.a
 SRCS = ft_atoi.c     ft_itoa.c		 ft_lstnew.c	  ft_putendl_fd.c  ft_strlcat.c  ft_substr.c\
@@ -15,9 +15,9 @@ $(NAME): $(OBJS)
 	ar -rcs $@ $^
 %.o: %.c libft.h
 	$(CC) -c $(CFLAGS) -o $@ $<
-clean: 
+clean:
 	rm -f $(OBJS)
 fclean: clean
 	rm -f $(NAME)
 re: fclean all
-.PHONY: clean
+.PHONY: clean all fclean re

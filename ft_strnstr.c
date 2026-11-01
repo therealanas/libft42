@@ -6,50 +6,35 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 23:34:18 by username          #+#    #+#             */
-/*   Updated: 2026/10/30 19:44:46 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/01 16:35:45 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	size_t	fi;
-	char	*p;
 
 	i = 0;
 	j = 0;
-	fi = 0;
-	p = NULL;
 	if (little[0] == '\0')
 		return ((char *) big);
 	while (i < len && big[i])
 	{
-		if (little[j] == '\0')
-			return (p);
-		else if (big[i] == little[j])
+		if (big[i] == little[j])
 		{
-			if (j == 0)
-			{
-				p = (char *) & big[i];
-				fi = i;
-			}
+			i++;
 			j++;
+			if (little[j] == '\0')
+				return ((char *) &big[i - j]);
 		}
 		else
 		{
-			if (j > 0)
-				i = fi + 1;
-			else
-				i++;
-			j = 0 ;
-			continue;
+			i = i - j + 1;
+			j = 0;
 		}
-		i++;
 	}
-	if (little[j] == '\0')
-		return (p);
 	return (NULL);
 }

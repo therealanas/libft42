@@ -6,29 +6,20 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 19:39:24 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:36:45 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/01 17:23:44 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stddef.h>
-
-static size_t	ft_strlen(char *s)
-{
-	size_t	l = 0;
-
-	while (*(s++))
-		l++;
-	return (l);
-}
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*r;
 	size_t	l1;
 	size_t	l2;
-	size_t	i = 0;
+	size_t	i;
 
+	i = 0;
 	if (s2 == NULL || s1 == NULL)
 		return (NULL);
 	l1 = ft_strlen((char *) s1);

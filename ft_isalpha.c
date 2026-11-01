@@ -5,12 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/12 11:29:20 by username          #+#    #+#             */
-/*   Updated: 2026/10/28 13:50:28 by ahoumdi          ###   ########.fr       */
+/*   Created: 2026/11/01 13:47:56 by username          #+#    #+#             */
+/*   Updated: 2026/11/01 13:48:00 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+#include "libft.h"
+
+int	ft_isalpha(int c)
 {
 	return ((('a' <= c) && (c <= 'z')) || (('A' <= c) && (c <= 'Z')));
 }
