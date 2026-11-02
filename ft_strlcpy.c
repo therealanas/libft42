@@ -6,11 +6,11 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 11:16:38 by ahoumdi           #+#    #+#             */
-/*   Updated: 2026/11/01 18:44:58 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/02 13:42:21 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

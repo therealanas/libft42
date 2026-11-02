@@ -6,11 +6,11 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 13:47:08 by ahoumdi           #+#    #+#             */
-/*   Updated: 2026/11/01 18:16:45 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/02 13:43:15 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

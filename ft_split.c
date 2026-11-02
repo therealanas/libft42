@@ -6,7 +6,7 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>         #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 10:03:19 by ahoumdi          #+#    #+#              */
-/*   Updated: 2026/11/01 18:39:39 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/02 13:56:07 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static char	*strsepcpy(char **s, char c)
 	char	*copy;
 	size_t	l;
 
-	while (**s == c)
+	while (**s && **s == c)
 		(*s)++;
 	l = ft_strseplen(*s, c);
 	r = malloc(l + 1);
@@ -74,7 +74,7 @@ static char	*strsepcpy(char **s, char c)
 		(*s)++;
 	}
 	*r = '\0';
-	while (**s == c)
+	while (**s && **s == c)
 		(*s)++;
 	return (copy);
 }

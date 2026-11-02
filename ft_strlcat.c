@@ -6,7 +6,7 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:45:41 by ahoumdi           #+#    #+#             */
-/*   Updated: 2026/11/01 18:44:32 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/02 14:03:27 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		ds++;
 		i++;
 	}
-	dst--;
+	if (size > 0)
+		dst--;
 	if (ds >= size)
 		return (size + ss);
 	if (size > 0)
