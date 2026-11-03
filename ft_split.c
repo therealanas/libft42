@@ -6,13 +6,13 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>         #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 10:03:19 by ahoumdi          #+#    #+#              */
-/*   Updated: 2026/11/02 13:56:07 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/03 16:31:53 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_countsplits(char *s, char c, size_t l)
+static size_t	ft_countsplits(char const *s, char c, size_t l)
 {
 	size_t	count;
 	size_t	i;
@@ -32,7 +32,7 @@ static size_t	ft_countsplits(char *s, char c, size_t l)
 	return (count);
 }
 
-static size_t	ft_strseplen(char *s, char c)
+static size_t	ft_strseplen(char const *s, char c)
 {
 	size_t	l;
 
@@ -55,7 +55,7 @@ static void	freeerr(char **s, size_t l)
 	free(s);
 }
 
-static char	*strsepcpy(char **s, char c)
+static char	*strsepcpy(char const **s, char c)
 {
 	char	*r;
 	char	*copy;
@@ -89,14 +89,14 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	if (s == NULL)
 		return (NULL);
-	l = ft_strlen((char *) s);
-	count = ft_countsplits((char *) s, c, l);
+	l = ft_strlen(s);
+	count = ft_countsplits(s, c, l);
 	p = malloc((count + 1) * sizeof(char *));
 	if (p == NULL)
 		return (NULL);
 	while (i < count)
 	{
-		p[i] = strsepcpy((char **) & s, c);
+		p[i] = strsepcpy(& s, c);
 		if (p[i] == NULL)
 		{
 			freeerr(p, i);
