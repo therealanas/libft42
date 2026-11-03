@@ -6,7 +6,7 @@
 /*   By: ahoumdi <ahoumdi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 13:52:47 by ahoumdi           #+#    #+#             */
-/*   Updated: 2026/11/01 14:31:55 by ahoumdi          ###   ########.fr       */
+/*   Updated: 2026/11/03 12:46:16 by ahoumdi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <stddef.h>
 # include <limits.h>
 # include <stdint.h>
 
